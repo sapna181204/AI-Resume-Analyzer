@@ -1,187 +1,144 @@
 # 📄 AI Resume Analyzer
 
-An intelligent resume analysis system that evaluates resumes based on skills, experience, ATS compatibility, and semantic understanding. This project helps candidates improve their resumes and provides insights into strengths, weaknesses, and job readiness.
+An AI-powered resume analysis system that evaluates resumes based on skills, experience, ATS compatibility, and semantic understanding.
+It helps candidates improve their resumes by providing actionable insights into strengths, weaknesses, and job readiness.
 
 ---
-
 ## 🚀 Features
 
-### 📊 ATS Score Calculation
-Evaluates resume compatibility with Applicant Tracking Systems.
-
-### 🧠 Semantic Analysis
-Understands context, not just keywords.
-
-### 🏆 Skill Extraction & Matching
-Identifies key skills and compares them with job requirements.
-
-### 📈 Experience Analysis
-Analyzes work experience relevance and quality.
-
-### ⚖️ Fairness Module
-Reduces bias in resume evaluation.
-
-### 🔒 Anonymization
-Removes personal identifiers for unbiased analysis.
-
-### 📄 Resume Parsing
-Extracts structured data from resumes (PDF, DOCX, etc.).
-
-### 🌐 Simple Frontend Interface
-Upload and analyze resumes easily.
+- 📊 ATS Score Calculation – Evaluates how well a resume performs in Applicant Tracking Systems
+- 🧠 Semantic Analysis – Understands context using NLP instead of just keyword matching
+- 🏆 Skill Extraction & Matching – Identifies key skills and compares them with job requirements
+- 📈 Experience Analysis – Evaluates relevance and quality of work experience
+- ⚖️ Fairness Module – Reduces bias in resume evaluation
+- 🔒 Anonymization – Removes personal identifiers for unbiased analysis
+- 📄 Resume Parsing – Extracts structured data from resumes (PDF, DOCX, etc.)
+- 🌐 Frontend Interface – Simple UI to upload and analyze resumes
 
 ---
-
 ## 🏗️ Project Structure
 
-```text
-
-AI Resume Analyzer/
+```text 
+AI-Resume-Analyzer/
 │
 ├── backend/
-│   ├── anonymizer/       # Removes personal details for fair analysis
-│   ├── ats/              # ATS scoring logic
-│   ├── auth/             # Authentication (if implemented)
-│   ├── core/             # Core backend logic
-│   ├── experience/       # Experience evaluation
-│   ├── fairness/         # Bias detection & fairness checks
-│   ├── model/            # ML/AI model logic
-│   ├── models/           # Data models / schemas
-│   ├── parser/           # Resume parsing (PDF/DOCX)
-│   ├── routes/           # API endpoints
-│   ├── semantic/         # NLP & semantic analysis
-│   ├── skills/           # Skill extraction & matching
-│   ├── utils/            # Helper functions
-│   │
-│   ├── __init__.py
-│   ├── main.py           # Entry point of backend
-│   └── test_db.py        # Database testing script
+│   ├── anonymizer/
+│   ├── ats/
+│   ├── auth/
+│   ├── core/
+│   ├── experience/
+│   ├── fairness/
+│   ├── model/
+│   ├── models/
+│   ├── parser/
+│   ├── routes/
+│   ├── semantic/
+│   ├── skills/
+│   ├── utils/
+│   ├── main.py
+│   └── test_db.py
 │
 ├── frontend/
-│   ├── index.html        # Main UI
-│   ├── script.js         # Frontend logic
-│   └── style.css         # Styling
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
 │
-├── uploads/              # Uploaded resumes
-├── venv/                 # Virtual environment
-├── create_tables.py      # Database setup
-├── requirements.txt      # Dependencies
-└── README.md             # Project documentation
+├── create_tables.py
+├── requirements.txt
+├── .gitignore
+└── README.md
 
 ```
+⚠️ Note: venv/, uploads/, and __pycache__/ are excluded via .gitignore.
 
 ---
-
 ## ⚙️ Installation & Setup
+### Clone the Repository
 
-### 1. Clone the Repository
-git clone https://github.com/your-username/ai-resume-analyzer.git
+git clone https://github.com/sapna181204/AI-Resume-Analyzer.git
 
-cd ai-resume-analyzer
+cd AI-Resume-Analyzer
 
+### Create Virtual Environment
 
-### 2. Create Virtual Environment
 python -m venv venv
 
 Activate it:
+Windows → venv\Scripts\activate
+Mac/Linux → source venv/bin/activate
 
-**Windows**
-venv\Scripts\activate
+### Install Dependencies
 
-
-**Mac/Linux**
-source venv/bin/activate
-
-
-### 3. Install Dependencies
 pip install -r requirements.txt
 
+### Setup Database
 
-### 4. Setup Database
 python create_tables.py
 
+### Run Backend Server
 
-### 5. Run Backend Server
 python backend/main.py
 
+### Run Frontend
 
-### 6. Run Frontend
-
-Open:
-frontend/index.html
-
+Open in browser: frontend/index.html
 
 ---
-
 ## 🔄 Workflow
-
-1. User uploads resume  
-2. Resume is parsed  
-3. Personal data is anonymized  
-4. Skills & experience are extracted  
-5. Semantic analysis is performed  
-6. ATS score is calculated  
-7. Final report is generated  
+1. User uploads resume
+2. Resume is parsed
+3. Personal data is anonymized
+4. Skills & experience are extracted
+5. Semantic analysis is performed
+6. ATS score is calculated
+7. Final evaluation report is generated
 
 ---
-
 ## 🧠 Technologies Used
-
-- Python  
-- JavaScript  
-- HTML  
-- CSS  
-- NLP Techniques  
-- Machine Learning  
-- Database (SQLite/MySQL/PostgreSQL)  
+- Python
+- JavaScript
+- HTML, CSS
+- Natural Language Processing (NLP)
+- Machine Learning
+- Database Systems (SQLite/MySQL/PostgreSQL)
 
 ---
-
 ## 📌 Use Cases
-
-- Students improving resumes  
-- Job seekers optimizing ATS score  
-- Recruiters screening candidates  
-- Academic projects  
+- Students improving resumes
+- Job seekers optimizing ATS score
+- Recruiters screening candidates
+- Academic projects
 
 ---
-
 ## ⚠️ Limitations
-
-- Parsing accuracy may vary  
-- ATS scoring is approximate  
-- Limited domain-specific evaluation  
+- Parsing accuracy depends on resume format
+- ATS scoring is an approximation of real systems
+- Limited domain-specific customization
 
 ---
-
 ## 🔮 Future Improvements
-
-- LinkedIn integration  
-- Advanced AI scoring  
-- Analytics dashboard  
-- Multi-language support  
-- Full deployment  
+- LinkedIn integration
+- Advanced AI/LLM-based scoring
+- Analytics dashboard
+- Multi-language support
+- Full deployment
 
 ---
-
 ## 🤝 Contributing
 
-Fork → Clone → Create Branch → Commit → Push → Pull Request  
+Fork → Clone → Create Branch → Commit → Push → Pull Request
 
 ---
-
 ## 📜 License
 
-This project is for educational purposes.
+This project is intended for educational purposes.
 
 ---
-
 ## 👨‍💻 Author
 
 Sapna
 
 ---
+## ⭐ Support
 
-## ⭐ Acknowledgment
-
-If you found this useful, consider giving it a star.
+If you found this project useful, consider giving it a ⭐ on GitHub!
