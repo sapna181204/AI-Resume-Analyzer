@@ -1,0 +1,49 @@
+ # ========================
+# Python related
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# ========================
+# Environment / Secrets
+# ========================
+.env
+venv/
+*.env
+*.secret
+*.key
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.DS_Store
+
+# ========================
+# Uploaded files / Data
+# ========================
+uploads/
+*.csv
+*.xlsx
+*.json
+*.zip
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# Build / Cache
+# ========================
+build/
+dist/
+*.egg-info/
